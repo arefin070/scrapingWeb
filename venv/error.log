@@ -179,3 +179,62 @@ Traceback (most recent call last):
   File "D:\Institute\United International University\Spring 2019\Thesis and Project\Projects\scrapingWeb\venv\upscraping.py", line 37, in write_webpage_as_html
     fobj.write(self.__data)
 TypeError: a bytes-like object is required, not 'str'
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "D:\Institute\United International University\Spring 2019\Thesis and Project\Projects\scrapingWeb\venv\upscraping.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "D:\Institute\United International University\Spring 2019\Thesis and Project\Projects\scrapingWeb\venv\upscraping.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "D:\Institute\United International University\Spring 2019\Thesis and Project\Projects\scrapingWeb\venv\upscraping.py", line 37, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1254, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1107, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1152, in _send_request
+    self.endheaders(body)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1103, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1261, in connect
+    server_hostname=server_hostname)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\ssl.py", line 385, in wrap_socket
+    _context=self)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\ssl.py", line 760, in __init__
+    self.do_handshake()
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\ssl.py", line 996, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\ssl.py", line 641, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Institute\United International University\Spring 2019\Thesis and Project\Projects\scrapingWeb\venv\upscraping.py", line 21, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 163, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 466, in open
+    response = self._open(req, data)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 484, in _open
+    '_open', req)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1297, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1256, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>

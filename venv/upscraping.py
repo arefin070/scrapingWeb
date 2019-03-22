@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 # Global variables
-url_aj = 'https://bangla.bdnews24.com/'
+url_aj = 'https://www.aljazeera.com/'
 filepath = 'aj.html'
 
 
@@ -77,11 +77,19 @@ class NewsScraper:
                 # print (self.__url + tag.parent.get('href'), tag.string)
                 link = self.__url + tag.parent.get('href')
                 title = tag.string
-                news_links += "<li><p href= '{}' target='_blank'>{}</li>\n".format(link, title)
+                news_links += "<li><a href='{}' target='_blank'>{}</a></li>\n".format(link, title)
 
         news_links += '</ol>'
         htmltext = htmltext.format(NEWS_LINKS=news_links)
 
         # print(htmltext)
-        self.write_webpage_as_html(filepath="banglanews24.html", data=htmltext.encode())
+        self.write_webpage_as_html(filepath="simple.html", data=htmltext.encode())
 
+    def print_beautiful_soup(self):
+        # print (self.__soup.title.string)
+        news_list = self.__soup.find_all(['h1', 'h2', 'h4'])  # h1
+
+        # print (news_list)
+        for tag in news_list:
+            if tag.parent.get('href'):
+                print(self.__url + tag.parent.get('href'), tag.string)
